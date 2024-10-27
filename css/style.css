@@ -1,0 +1,185 @@
+/* 设置页面背景为渐变色 */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* To-Do List 容器样式 */
+.container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 1800px;
+}
+
+/* 输入框和按钮的容器 */
+.input-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* 输入框样式 */
+input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#prioritySelect {
+    appearance: none;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#prioritySelect:focus {
+    outline: none;
+    border-color: #94ccd2;
+}
+
+/* 按钮样式 */
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #4CAF50, #8BC34A);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #388E3C, #66BB6A);
+}
+
+/* 列表样式 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* 列表项样式 */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* 复选框样式 */
+input[type="checkbox"] {
+    margin-right: 5px;
+    flex-shrink: 0;
+}
+
+/* 任务文本样式 */
+.task-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.task-text {
+    margin-left: 5px;
+    flex-grow: 1;
+    text-align: left;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 按钮容器样式 */
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+/* 删除按钮样式 */
+li button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+li button:hover {
+    background-color: #c82333;
+  }
+  
+
+  .low {
+  background: linear-gradient(135deg, #d4edda, #c3e6cb); /* 绿色渐变 */
+  border-radius: 5px;
+  padding-left: 10px;
+  color: #155724;
+  margin: 5px 0;
+  border-left: 5px solid green;
+}
+
+.medium {
+  background: linear-gradient(135deg, #fff3cd, #ffeeba); /* 黄色渐变 */
+  border-radius: 5px;
+  padding-left: 10px;
+  color: #856404;
+  margin: 5px 0;
+  border-left: 5px solid orange;
+}
+
+.high {
+  background: linear-gradient(135deg, #f8d7da, #f5c6cb); /* 红色渐变 */
+  border-radius: 5px;
+  padding-left: 10px;
+  color: #721c24;
+  margin: 5px 0;
+  border-left: 5px solid red;
+}
+
+#deleteAll {
+  padding: 10px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #f44336, #e57373);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+#deleteAll:hover {
+  background: linear-gradient(45deg, #d32f2f, #ef5350);
+}
+
+.delete-all-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+
+.create-date {
+  font-size: 0.1em;
+  color: #666;
+  padding-right: 10px;
+  flex-shrink: 0;
+}
